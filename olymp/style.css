@@ -1,0 +1,214 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	scroll-behavior: smooth;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid lightgray;
+	box-shadow: 1px 1px 3px lightblue;
+	position: fixed;
+	width: 100%;
+	background-color: white;
+}
+.logo {
+	margin-left: 2%;
+}
+.logo img {
+	width: 	150px;
+	margin: 20px;
+}
+.small-logo img {
+	width: 	80px;
+	margin-top: 5px;
+}
+nav {
+	display: flex;
+	margin-right: 2%;
+}
+nav a {
+	text-decoration: none;
+	padding: 10px 20px;
+	color: #a9a6a6;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+nav a:hover {
+	color: #484646;
+	border-bottom: 2px dotted #3f51b5;
+}
+nav ul {
+	display: flex;
+	list-style: none;
+}
+nav ul li {
+	padding: 20px;
+}
+.main {
+	padding-top: 140px;
+}
+h1, h2, h3 {
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-shadow: 2px 2px 5px lightblue;
+	color: #484646;
+}
+footer {
+	display: flex;
+	justify-content: space-around;
+	background: lightblue;
+	position: absolute;
+	width: 100%;
+	padding: 10px 0;
+	align-items: center;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #484646, -1px -1px 1px #484646; 
+}
+.wrap {
+	width: 70%;
+	height: 230px;
+	display: flex;
+	justify-content: space-between;
+	margin: 20px auto;
+}
+.card {
+	width: 30%;
+	/*height: 100%;*/
+	border-radius: 5%;
+	border: 2px solid grey; 
+	/*overflow: hidden;*/
+	box-shadow: 2px 2px 5px grey;
+}
+.card:hover {
+	background: lightblue;
+	transition: background 500ms ease;
+}
+.card:hover h3 {
+	color: white;
+	text-shadow: 1px 1px 1px #484646, -1px -1px 1px #484646; 
+}
+.card img { width: 100px; display: block;
+	border-radius: 20px;
+	border: 5px solid lightgray;
+	box-shadow: 2px 2px 5px grey;
+	margin: 10px auto; }
+p {
+	width: 90%;
+	margin: 10px auto;
+	text-align: justify;
+}
+hr {
+	width: 30%;
+	margin: 30px auto;
+}
+span {
+	padding: 3px;
+	background: lightblue;
+}
+span:hover {
+	background: blue;
+	color: white;
+	font-weight: bold;
+	transition: 500ms all ease;
+}
+.zag {
+	text-align: center;
+	font-size: 24px;
+}
+table {
+	width: 60%;
+	margin: auto;
+	border: 1px solid grey;
+}
+td, th {
+	border: 1px solid grey;
+	padding: 10px;
+}
+tr:nth-child(odd) {
+	background: lightblue;
+}
+caption {
+	font-weight: bold;
+	margin: 5px;
+}
+td:first-child {
+	width: 20%;
+	text-align: center;
+}
+fieldset {
+	width: 70%;
+	border-radius: 10px;
+	margin: auto;
+}
+legend {
+	margin-left: 40px;
+	font-weight: bold;
+}
+#champ {
+	width: 250px;
+}
+.vidy {
+	display: flex;
+	justify-content: space-around;
+	width: 70%;
+	margin: auto;
+}
+.grupa {
+	display: block;
+	width: 30%;
+}
+.grupa ul {
+	list-style: none;
+}
+.grupa ul li:before {
+	content: "\1F3C5 ";
+	margin-right: 5px;
+}
+@media screen and (max-width: 800px) {
+	.wrap {
+		width: 90%;
+		height: 640px;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: auto;
+	}
+	.card {
+		width: 80%;
+		height: 200px;
+		border-radius: 20px;
+		border: 2px solid grey; 
+		margin: 5px auto;
+	}
+}
+@media screen and (max-width: 600px) {
+	header {
+		flex-direction: column;
+		align-items: center;
+	}
+	.main {
+		padding-top: 190px;
+	}
+}
+@media screen and (max-width: 400px) {
+	ul {
+		flex-direction: column;
+		align-items: center;
+	}
+	.main {
+		padding-top: 310px;
+	}
+	.small-logo img {
+		display: none;
+	}
+}
